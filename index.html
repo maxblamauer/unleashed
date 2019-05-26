@@ -1,0 +1,49 @@
+<!--
+    I, Maxwell Blamauer, student number 000760618, certify that this material is my
+    original work. No other person's work has been used without due
+    acknowledgement and I have not made my work available to anyone else.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Unleashed</title>
+
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+        <!--Script needed to access the bing api-->
+        <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=AqWKTJKey8mvN99G6UVfxapnC5zFx4k_9AXpdmnLHUpwe0bqO2g7SywJpRcbPxGM'></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script type='text/javascript' src='main.js'></script> <!-- Java Style Reference -->
+        <link  rel = "stylesheet" type = "text/css" href = "mainStyleSheet.css">
+
+    </head>
+    <body onload = 'loadMapScenario()' class = "fluid-wrapper">
+            <div class="topnav">
+                    <a class="navbar-brand" href="index.html" id = "header">Un<span>Leashed</span></a>
+                    <a href="news.html">News</a>
+                    <a href="#">Reviews</a>
+                    <a href="#">Settings</a>
+                    <a href="login.html">Logout</a>
+                    <div class="topnav-right">
+                        <img onclick="hike();" id = "hikeImg" src="images/hike.png" width="50" height="50" alt="" >
+                        <img id = "dogImg" src="images/dog.png" width="50" height="50" alt="" onclick = "dog();">
+                        <img id = "parkImg" src="images/park.png" width="50" height="50" alt="" onclick = "playground();">
+                    </div>
+                </div>
+
+            <div id='printoutPanel'></div>
+            <div id='mapContainer'>
+                <div id='myMap'></div>
+            </div>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+            <script src="js/bootstrap.min.js"></script>
+            
+
+    </body>
+</html>

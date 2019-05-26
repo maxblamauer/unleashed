@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Unleashed</title>
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+        <!--Script needed to access the bing api-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type='text/javascript' src='login.js'></script> <!-- Java Style Reference -->
+        <link  rel = "stylesheet" type = "text/css" href = "loginStyle.css">
+
+    </head>
+    <body>
+        <header>Un<span>Leashed</span></header>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+        <script src = "main.js"></script>
+        
+        <div id = "loginBox">
+            <img src = "images/dog.png" class = "dog"/>
+            <img src = "images/hike.png" class = "hike"/>
+            <img src = "images/park.png" class = "park"/>
+
+            <div id = "loginSection">
+                <h1>Please Login</h1>
+                <input type = "text"  id = "userName" placeholder = "Enter Username" name = "userName"/><br />
+                <input type = "password" id = "password" placeholder = "Enter Password" name = "password"/><br />
+                <button type = "submit" onclick = "login()" value = "Login">Login</button><br />
+                <div id = "message" style = "display: none;"></div> <br />
+                <a href = "#" onclick = "return unhide()">Dont have an account?</a>
+
+            </div>
+            
+            <div id = "filterSection" style = "display: none;">
+                <h1>Check all that apply...</h1>
+                
+                <label>Dog Park</label>
+                <input type = "checkbox" name = "dogPark" value = "dogPark" id ="dogParkCheck">
+
+                <label>Hike Trail</label>
+                <input type = "checkbox" name = "hikeTrail" value = "hikeTrail" id = "hikeCheck">
+
+                <label>Play Ground</label>
+                <input type = "checkbox" name = "playGround" value = "playGround" id = "playGroundCheck">
+                <button type = "submit" onclick = "validation()" value = "Login">Submit</button><br />
+                <div id = "messageCheck" style = "display: none;"></div> <br />
+            </div>
+            <div id = "createUser" style = "display: none;">
+                <h1>Create an Account</h1>
+                    <input type = "text"  id = "userNameCreate" placeholder = "Enter Username" name = "text"/><br />
+                    <input type = "password" id = "password" placeholder = "Enter Password" name = "password"/><br />
+                    <button type = "submit" onclick = "createUser()" value = "Login">Login</button><br />
+                    <div id = "message" style = "display: none;"></div> <br />
+                    <a href = "#" onclick = "return hide()">Go Back</a>
+            </div>    
+        </div>
+    </body>
+</html>
